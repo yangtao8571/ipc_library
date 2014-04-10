@@ -3,11 +3,12 @@ ipc_library
 
 - Overview:
 
-  This is the inter process communication library, based on the shared memory techneque on windows.
+  This is the inter process communication library(just a native dll), based on the shared memory techneque on windows.
   In any IPC implementation, it's always best to derive a server/client approach to communication. 
   Also, for simplicity, it's wise to have the communication one way, normally to the server. 
   It's very easy to modify an IPC to perform two way communication. Simply create two IPC servers on both processes. 
   Making your IPC communication one way allows you to concentrate on performance issues.
+  
   
 - Features:
 
