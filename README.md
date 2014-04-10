@@ -14,3 +14,8 @@ ipc_library
   1. Support multi-clients to one server, write operation of clients is thread-safe.
   2. c#, java could use this library with a same adapter dll.
   3. Support 64 bit windows.
+  4. Server read data in the same order with clients write.
+
+- Performance:
+  
+  1. Bandwidth test shows transfer speed is about 500MB/sec on my 2 core 64bit 2.5G Hz 4G memory windows, with no optimization compiler option.
