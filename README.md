@@ -25,7 +25,9 @@ ipc_library
   
   The example is java process write some data to c# process.
   1. c# example:
-  
+
+  class Program
+    {
         [DllImport("coredll.dll", SetLastError = true)]
         public static extern IntPtr LocalAlloc(uint uFlags, uint uBytes);
 
@@ -60,8 +62,11 @@ ipc_library
                     Encoding.ASCII.GetString(buf, 0, (int)ramount));
             }
         }
+}
 
   2. java example, using JNA to access native DLL, need jna.jar:
+
+
 // Ipc_shared_memory_dll.java
 
 import com.sun.jna.Library;
@@ -80,9 +85,12 @@ public interface Ipc_shared_memory_dll extends Library{
 }
 
 // main method
+
+public static main(String[] args){
   Ipc_shared_memory_dll ipcDll = Ipc_shared_memory_dll.INSTANCE;
   ipcDll.ipcClientNew("a_test_server");
   Memory buf = new Memory(4096);
 	String cmd = "HEARTBEAT";
 	int len = buf.write(0, cmd.getBytes(), 0, cmd.length());
 	ipcDll.ipcClientWrite(buf, len, 0xffffffff);
+}
