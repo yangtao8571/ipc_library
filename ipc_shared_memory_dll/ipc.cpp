@@ -9,12 +9,6 @@
 #include <iostream>
 using namespace std;
 
-/*
-TODO:
-_beginthread.
-event may be change to manual reset.
-*/
-
 //#define MYDEBUG
 #include "mydebug.h"
 

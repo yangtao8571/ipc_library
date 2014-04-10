@@ -8,11 +8,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ipc_adapter", "ipc_adapter\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ipc_shared_memory_dll", "ipc_shared_memory_dll\ipc_shared_memory_dll.vcproj", "{16F27029-2399-4A21-A49B-89A083F4E983}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{F91E92A7-3758-4DD9-8903-FFE055A332B0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{16F27029-2399-4A21-A49B-89A083F4E983} = {16F27029-2399-4A21-A49B-89A083F4E983}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -36,13 +31,6 @@ Global
 		{16F27029-2399-4A21-A49B-89A083F4E983}.Release|Win32.ActiveCfg = Release|Win32
 		{16F27029-2399-4A21-A49B-89A083F4E983}.Release|Win32.Build.0 = Release|Win32
 		{16F27029-2399-4A21-A49B-89A083F4E983}.Release|x64.ActiveCfg = Release|Win32
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Debug|Win32.ActiveCfg = Debug|Win32
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Debug|Win32.Build.0 = Debug|Win32
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Debug|x64.ActiveCfg = Debug|x64
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Debug|x64.Build.0 = Debug|x64
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Release|Win32.ActiveCfg = Release|Win32
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Release|Win32.Build.0 = Release|Win32
-		{F91E92A7-3758-4DD9-8903-FFE055A332B0}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
