@@ -11,6 +11,6 @@ ipc_library
   
 - Features:
 
-  1. Support multi clients to one server, write operation of clients is thread-safe.
-  2. Support c#, java with a same adapter dll.
-  
+  1. Support multi-clients to one server, write operation of clients is thread-safe.
+  2. c#, java could use this library with a same adapter dll.
+  3  Support 64 bit windows.
